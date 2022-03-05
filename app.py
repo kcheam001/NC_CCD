@@ -33,7 +33,7 @@ def index():
         age = float(age)
         loan = float(loan)
         print(income, age, loan)
-        model1 = joblib.load("CCD_reg")
+        model1 = joblib.load("CCD_Reg")
         pred1 = model1.predict([[income,age,loan]])
         s1 = "The score of credit card default based on regression is " + str(pred1)
         model2 = joblib.load("CCD_Tree")
